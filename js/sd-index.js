@@ -51,7 +51,7 @@ function safetyIndexCharts(region){
       console.log('Safety Index Chart error:',err);
   })
   //Historical Line Chart
-  gsheet = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJnuI72Yjc-HGypc4K2Qo3sx6mv6HBOlvj9xEg-9-pgvPr5k28Plhg75hkgC77PEEpzf2kRfQnDw8I/pub?gid=3221396&single=true&output=csv';
+  gsheet = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJnuI72Yjc-HGypc4K2Qo3sx6mv6HBOlvj9xEg-9-pgvPr5k28Plhg75hkgC77PEEpzf2kRfQnDw8I/pub?output=csv';
   fetch(gsheet).then(function(response) {
     return response.text();
   }).then(function(data){
